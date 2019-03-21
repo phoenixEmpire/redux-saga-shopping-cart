@@ -40,7 +40,11 @@ const mapStatetoProps = state => {
   return { products: getVisibleProducts(state.products) };
 };
 
-// 可以是function，也可以是object
+/*
+  1 React-Redux会检测mapDispatchToProps的类型：可以是function（返回值object），也可以是object。
+  2 如果是对象类型，React-Redux会返回一个新的对象作为mapDispatchToProps：
+    原对象的每个成员都是Action创建函数，新对象的每个成员都是转发Action的函数。React-Redux会调用Redux来完成新旧对象的转换。
+ */  
 const mapDispatchToProps = { addToCart };
 
 export default connect(
