@@ -61,6 +61,7 @@ function quantityById(state = initialState.quantityById, action) {
   }
 }
 
+// 合并得到购物车Reducer
 export default combineReducers({
   checkoutStatus,
   quantityById

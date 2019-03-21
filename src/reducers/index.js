@@ -19,6 +19,7 @@ import { ADD_TO_CART } from "../actions";
   }
 */
 
+// 对商品Reducer、购物车Reducer再次合并
 const shoppingCart = combineReducers({
   products,
   cart

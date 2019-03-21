@@ -36,6 +36,7 @@ function byId(state = {}, action) {
   }
 }
 
+// 合并得到商品Reducer
 export default combineReducers({
   visibleIds,
   byId
